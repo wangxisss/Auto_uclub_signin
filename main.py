@@ -32,7 +32,7 @@ def login() -> (requests.session, int):
     if f.text.find("登录成功") == -1:
         return None
     return session
-
+ 
 
 def getCredit(session) -> int:
     url = "https://uclub.ucloud.cn/index/user/index.html"
